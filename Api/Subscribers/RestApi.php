@@ -42,7 +42,7 @@ class RestApi
 				$this->session->disableNative();
 			} catch (\Exception $exc) {
 				if (class_exists(\Tracy\Debugger::class)) {
-					\Tracy\Debugger::log($e->getMessage(), 'error.session-storage');
+					\Tracy\Debugger::log($exc->getMessage(), 'error.session-storage');
 				} else {
 					throw $exc;
 				}
