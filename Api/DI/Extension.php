@@ -37,7 +37,10 @@ class Extension extends \Adeira\CompilerExtension
 	public function beforeCompile()
 	{
 		$config = $this->getConfig();
-		$this->setMapping($config['presenterMapping']);
+		$presenterMapping = $config['presenterMapping'];
+		if (!!$presenterMapping) {
+			$this->setMapping($config['presenterMapping']);
+		}
 	}
 
 }
