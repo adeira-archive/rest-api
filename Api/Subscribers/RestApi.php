@@ -32,7 +32,7 @@ class RestApi
 		$module = substr($request->getPresenterName(), 0, strpos($request->getPresenterName(), ':'));
 		if (in_array($module, $this->enableForModules, TRUE)) {
 
-			if (class_exists(Tracy\Debugger::class)) {
+			if (class_exists(\Tracy\Debugger::class)) {
 				\Tracy\Debugger::$productionMode = TRUE; // enforce
 			}
 			$app->catchExceptions = TRUE; // always
