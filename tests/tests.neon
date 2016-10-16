@@ -1,0 +1,7 @@
+application:
+	scanDirs: false
+	mapping:
+		*: Adeira\Api\Tests\Mocks\*Presenter
+
+extensions:
+	restApi: Adeira\Api\DI\Extension

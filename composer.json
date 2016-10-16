@@ -1,0 +1,25 @@
+{
+  "name": "adeira/rest-api",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "nette/application": "^2.4",
+    "nette/di": "^2.4",
+    "adeira/compiler-extension": "^1.0"
+  },
+  "require-dev": {
+    "adeira/code-quality": "^1.0",
+    "mrtnzlml/testbench": "^2.4",
+    "nette/tester": "2.0.x-dev as 1.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Adeira\\Api\\": "Api/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Adeira\\Api\\Tests\\": "tests/Api/"
+    }
+  }
+}
