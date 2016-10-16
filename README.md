@@ -12,6 +12,7 @@ Use:
 ```
 extensions:
 	restApi: Adeira\Api\DI\Extension
+	fakeSession: Kdyby\FakeSession\DI\FakeSessionExtension # TODO: remove
 ```
 
 Configure:
